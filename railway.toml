@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+watchPaths = ["backend/"]
+
+[[volumes]]
+sourcePathPattern = "src:/var/data"
+mountPath = "/var/data"
