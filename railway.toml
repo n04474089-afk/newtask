@@ -2,6 +2,12 @@
 builder = "nixpacks"
 watchPaths = ["backend/"]
 
+[env]
+NODE_ENV = "production"
+
+[deploy]
+startCommand = "cd backend && npm install && npm start"
+
 [[volumes]]
 sourcePathPattern = "src:/var/data"
 mountPath = "/var/data"
